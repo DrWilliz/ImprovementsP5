@@ -1558,6 +1558,7 @@ input[type="checkbox"]:checked::before {
   grid-template-rows: auto;
   position: relative;
   z-index: 10;
+  padding: 5rem 15% 10rem 15%;
 }
 
 .omos-bread p {
@@ -1569,26 +1570,32 @@ input[type="checkbox"]:checked::before {
 }
 
 .video-overlay h2 {
+  color: #E5E5E5;
 }
 
 .omos-bread h3 {
   grid-column: 2/2;
   font-weight: 600;
   color: var(--clr-blue);
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: left;
   z-index: 10;
+  padding-top: .75rem;
 }
 
 .vid-container {
-  position: relative;
-  margin: 0;
+  display: grid;
+}
+
+.vid-container > * {
+  grid-column: 1;
+  grid-row: 1;
 }
 
 #myVideo {
   width: 100%;
-  height: 100%;
 }
+
 
 .video-overlay {
   position: absolute;
@@ -1597,4 +1604,43 @@ input[type="checkbox"]:checked::before {
   color: #f1f1f1;
   width: 100%;
   padding: 2.5em 2.5em;
+}
+
+
+.lidt-om {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.lidt-om h3 {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .video-overlay {
+    display: none;
+  }
+  
+  .lidt-om {
+    padding-top:5rem;
+    padding-bottom: 1rem;
+  }
+
+  .lidt-om h3 {
+    font-size: 2rem;
+  }
+
+  .omos-bread {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .omos-bread p {
+    font-size: 1rem;
+  }
+
+  .omos-bread h3 {
+    font-size: 1.25rem;
+  }
+
 }
