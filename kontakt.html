@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="da" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="javascript/mobile-nav.js" defer></script>
+  <script src="javascript/kontakt.js" defer></script>
+  <script src="javascript/language.js" defer></script>
+
+  <title>Kontakt</title>
+</head>
+
+<body>
+  <header class="primary-header">
+    <div class="wrapper">
+      <div class="primary-header-inner">
+        <span class="logo">
+          <a href="index.html">
+            <img class="spin" src="img/conversia-logoLogo.svg" alt="">
+            <img src="img/conversia-logoTextt.svg" alt="">
+          </a>
+        </span>
+        <ul class="nav-list">
+          <li><a href="rekruttering.html">Rekruttering</a></li>
+          <li><a href="HR.html">Human Resources</a></li>
+          <li><a href="omos.html">Om Os</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <ul class="mobile-nav">
+    <li><a href="rekruttering.html">Rekruttering</a></li>
+    <li><a href="HR.html">Human Resources</a></li>
+    <li><a href="omos.html">Om Os</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+  </ul>
+
+  <div class="contactBG"></div>
+  <form name="contactform" id="contact" action="#">
+    <div id="contact-form">
+      <h2 id="contact-header">Kontakt</h2>
+      <div class="input-row">
+        <span class="error" id="name-error"></span>
+        <input type="text" id="name-input" name="navn" placeholder="Navn">
+        <span class="error" id="virksomhed-error"></span>
+        <input type="text" id="virksomhed-input" name="virksomhed" placeholder="Virksomhed">
+        <span class="error" id="email-error"></span>
+        <input type="text" id="email-input" name="email" placeholder="E-mail">
+        <span class="error" id="telefon-error"></span>
+        <input type="text" id="telefon-input" name="telefon" placeholder="Telefon">
+      </div>
+      <div class="input-row">
+        <span class="error" id="besked-error"></span>
+        <textarea id="besked-input" name="besked" placeholder="Besked"></textarea>
+      </div>
+      <div id="check">
+        <label>
+          <input type="checkbox" id="accept" value="">
+          Jeg accepterer Conversias privatlivspolitik
+        </label>
+      </div>
+      <button id="contact-form-button" type="submit"
+        onclick="return ContactForm(document.contactform.email)">Send</button>
+      <div class="contactInfo-container">
+        <div class="contactInfo">
+          <img class="contactIcon" src="img/footer-img/phone.png" alt="Telefon Ikon">
+          <p>+45 22610509</p>
+        </div>
+        <div class="contactInfo">
+          <img class="contactIcon" src="img/footer-img/convo-bubbles.png" alt="dobbelt talebubble ikon">
+          <p>hsg@pentia.com</p>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <footer>
+    <div class="main-flex-container-footsies">
+      <div class="flex-container-top">
+        <div class="topbois numeral">
+          <img class="footer-image" src="img/footer-img/phone.png" alt="Telefon Ikon">
+          <p>+45 22610509</p>
+        </div>
+        <div class="topbois location">
+          <img class="footer-image" src="img/footer-img/marker.png" alt="lokation ikon">
+          <p>Edisonsvej 2 <br> 5000 Odense <br> Danmark</p>
+        </div>
+        <div class="topbois mailerman">
+          <img class="footer-image" src="img/footer-img/convo-bubbles.png" alt="dobbelt talebubble ikon">
+          <p>hsg@pentia.com</p>
+        </div>
+      </div>
+      <div class="house-of-lines">
+        <img class="lines-of-code" src="img/footer-img/lines.png" alt="">
+        <img class="lines-of-code" src="img/footer-img/lines.png" alt="">
+        <img class="lines-of-code" src="img/footer-img/lines.png" alt="">
+        <img class="lines-of-code" src="img/footer-img/lines.png" alt="">
+      </div>
+      <div class="flex-container-bot">
+        <div class="footlocker-nav">
+          <a href="index.html">Home</a>
+          <a href="rekruttering.html">Rekruttering</a>
+          <a href="HR.html">HR</a>
+          <a href="omos.html">Om os</a>
+          <a class="active-page-footer" href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="socials-footlocker">
+          <ul class="socials">
+            <li class="user"><a href="https://www.linkedin.com/in/henrikgrove-passionformennesker/"><i
+                  class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="user"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+          </ul>
+        </div>
+        <div class="copyright">
+          copyright © 2023 • Hold 12
+          <div class="language-switch" onclick="navToggle()">
+            <i class="fa-solid fa-earth-americas"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="lang-bar" class="lang-overlay">
+        <p class="close-button" onclick="navToggle()">×</p>
+        <h1>VÆLG SPROG</h1>
+        <h2>Select Language</h2>
+        <div>
+        <ul class="lang-list">
+          <li id="lang-options">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
